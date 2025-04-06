@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Carousel</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .carousel-inner > .item {
+            height: 300px;
+            color: white;
+            text-align: center;
+            line-height: 300px;
+            font-size: 2em;
+        }
+        .first-slide { background-color: #5bc0de; }
+        .second-slide { background-color: #5cb85c; }
+        .third-slide { background-color: #f0ad4e; }
+        .fourth-slide { background-color: #d9534f; }
+        .fifth-slide { background-color: #292b2c; }
+    </style>
 </head>
 <body>
-    <!-- Write your code here -->
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="item first-slide">
+            First slide
+        </div>
+        <div class="item second-slide">
+            Second slide
+        </div>
+        <div class="item third-slide active">
+            Third slide
+        </div>
+        <div class="item fourth-slide">
+            Fourth slide
+        </div>
+        <div class="item fifth-slide">
+            Fifth slide
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+<!-- Bootstrap JS dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
- 
 </html>
